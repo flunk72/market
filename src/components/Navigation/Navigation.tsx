@@ -1,7 +1,25 @@
-import React from "react";
+import { NavigationProps } from "../../interfaces/navigation";
+import { Nav, NavLink } from "./Navigation.styled";
+import { Outlet } from "react-router-dom";
 
-const Navigation = () => {
-  return <div>Navigation</div>;
+interface Props {
+  navigation: NavigationProps[];
+}
+
+const Navigation = ({ navigation }: Props) => {
+  return (
+    <Nav>
+      {navigation.map((nav: NavigationProps) => {
+        const { path, name } = nav;
+        return (
+          <NavLink key={path} to={path}>
+            {name}
+          </NavLink>
+        );
+      })}
+      <Outlet />
+    </Nav>
+  );
 };
 
 export default Navigation;

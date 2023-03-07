@@ -25,7 +25,7 @@ html,
 body {
 	overflow-x: hidden;
 	max-width: 100vw;
-	color:var(--black);
+	color: var(--white);
 	background: #F5F6F8;
 	font-family: 'Noto Sans', sans-serif;
 }
