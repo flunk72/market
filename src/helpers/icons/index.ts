@@ -1,3 +1,4 @@
+export { ReactComponent as AccountIcon } from './account.svg'
 export { ReactComponent as BasketIcon} from './basket.svg'
 export { ReactComponent as BurgerIcon} from './burger.svg'
 export { ReactComponent as FavoritIcon} from './heart.svg'

@@ -5,6 +5,7 @@ import {
   BurgerIcon,
   FavoritIcon,
   LogoIcon,
+  AccountIcon,
 } from "../../../helpers/icons";
 import { HeaderWrapper, IconBlock } from "./Header.styled";
 
@@ -16,6 +17,7 @@ const Header = () => {
       <IconBlock>
         <FavoritIcon />
         <BasketIcon />
+        <AccountIcon />
         <BurgerIcon />
       </IconBlock>
     </HeaderWrapper>
