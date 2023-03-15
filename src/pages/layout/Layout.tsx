@@ -1,5 +1,6 @@
+import React from "react";
+import { Outlet } from "react-router-dom";
 import Content from "./Content/Content";
-import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 import { LayoutWrapper } from "./Layout.styled";
 
@@ -8,7 +9,7 @@ const Layout = () => {
     <LayoutWrapper>
       <Header />
       <Content />
-      <Footer />
+      <Outlet />
     </LayoutWrapper>
   );
 };

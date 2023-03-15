@@ -1,11 +1,14 @@
 
 export const navigation = [{
   path: "/home",
-  name: "Home"
+  name: "Home",
+  id: 1
 }, {
   path: "/products",
-  name: "Products"
+  name: "Products",
+  id: 2,
 },{
   path: "/about",
-  name: "About"
+  name: "About",
+  id: 3
 }]

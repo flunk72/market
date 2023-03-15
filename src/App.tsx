@@ -3,6 +3,7 @@ import Home from "./pages/layout/Content/Home/Home";
 import Layout from "./pages/layout/Layout";
 import { Styles } from "./styles.styled";
 import { BrowserRouter } from "react-router-dom";
+import React from "react";
 
 function App() {
   return (

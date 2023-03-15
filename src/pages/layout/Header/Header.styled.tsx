@@ -21,10 +21,5 @@ export const IconBlock = styled.div`
   svg {
     fill: var(--white);
     margin: 10px;
-    @media (min-width: 600px) {
-      &:last-child {
-        display: none;
-      }
-    }
   }
 `;

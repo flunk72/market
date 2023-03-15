@@ -6,11 +6,11 @@ export const Styles = createGlobalStyle`
   --white: white;
   --main: #160b42;
   --primary: #ffbf03;
-  --primary-hover: #de8c00;
+  --primary-hover: #f59b00;
   --yellow-dark: #3c2d20;
   --red: #fb5501;
   --blue: #255ab4;
-  --purple-hover: #102155;
+  --purple: #102155;
   --font-family: 'Noto Sans', sans-serif;
 
 }

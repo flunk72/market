@@ -1,23 +1,23 @@
+import React from "react";
 import { NavigationProps } from "../../interfaces/navigation";
 import { Nav, NavLink } from "./Navigation.styled";
-import { Outlet } from "react-router-dom";
 
 interface Props {
   navigation: NavigationProps[];
+  sidebar: boolean;
 }
 
-const Navigation = ({ navigation }: Props) => {
+const Navigation = ({ navigation, sidebar }: Props) => {
   return (
-    <Nav>
+    <Nav sidebar={sidebar}>
       {navigation.map((nav: NavigationProps) => {
-        const { path, name } = nav;
+        const { path, name, id } = nav;
         return (
-          <NavLink key={path} to={path}>
+          <NavLink key={id} to={path || `products/${path}`} sidebar={sidebar}>
             {name}
           </NavLink>
         );
       })}
-      <Outlet />
     </Nav>
   );
 };

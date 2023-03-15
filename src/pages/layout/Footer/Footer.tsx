@@ -2,7 +2,7 @@ import React from "react";
 import { FooterWrapper } from "./Footer.styled";
 
 const Footer = () => {
-  return <FooterWrapper>Footer</FooterWrapper>;
+  return <FooterWrapper>Информация о продукте</FooterWrapper>;
 };
 
 export default Footer;

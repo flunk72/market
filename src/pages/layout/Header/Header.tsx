@@ -1,3 +1,4 @@
+import React from "react";
 import Navigation from "../../../components/Navigation/Navigation";
 import { navigation } from "../../../helpers/array/navigation";
 import {
@@ -18,7 +19,6 @@ const Header = () => {
         <FavoritIcon />
         <BasketIcon />
         <AccountIcon />
-        <BurgerIcon />
       </IconBlock>
     </HeaderWrapper>
   );
