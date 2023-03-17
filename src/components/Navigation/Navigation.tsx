@@ -4,7 +4,7 @@ import { Nav, NavLink } from "./Navigation.styled";
 
 interface Props {
   navigation: NavigationProps[];
-  sidebar: boolean;
+  sidebar?: boolean;
 }
 
 const Navigation = ({ navigation, sidebar }: Props) => {

@@ -1,5 +1,5 @@
 import React from "react";
-import { HtagProps } from "./Htag.props";
+import { HtagProps } from "./HTag.props";
 import { H1, H2, H3 } from "./HTag.styled";
 
 const HTag = ({ tag, children }: HtagProps) => {

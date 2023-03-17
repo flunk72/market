@@ -9,6 +9,10 @@ export const navigation = [{
   id: 2,
 },{
   path: "/about",
-  name: "About",
+  name: "About Us",
   id: 3
+}, {
+  path: "/support",
+  name: "Help & Support",
+  id: 4
 }]
