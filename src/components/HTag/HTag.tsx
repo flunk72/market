@@ -1,6 +1,6 @@
 import React from "react";
 import { HtagProps } from "./HTag.props";
-import { H1, H2, H3 } from "./HTag.styled";
+import { H1, H2, H3, H4 } from "./HTag.styled";
 
 const HTag = ({ tag, children }: HtagProps) => {
   switch (tag) {
@@ -10,6 +10,8 @@ const HTag = ({ tag, children }: HtagProps) => {
       return <H2>{children}</H2>;
     case "h3":
       return <H3> {children}</H3>;
+    case "h4":
+      return <H4> {children}</H4>;
     default:
       return <></>;
   }

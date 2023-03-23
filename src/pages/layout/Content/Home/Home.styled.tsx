@@ -11,24 +11,28 @@ export const Trending = styled.div`
   height: 100%;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-template-rows: 1fr;
-  grid-area: trending;
   gap: 15px;
 `;
 
-export const TrendingCard = styled.div`
-  padding: 10px;
-  border: 1px solid var(--primary);
-  background: var(--purple);
+export const Sale = styled(Trending)``;
 
-  &:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-    transition: 0.5s;
-  }
+export const ImgWrapper = styled.div`
+  width: 100%;
+  margin: 15px 0;
 `;
 
-export const Sale = styled(Trending)`
-  grid-area: sale;
+export const Bedroom = styled.img`
+  width: 100%;
 `;
 
-export const SaleCard = styled(TrendingCard)``;
+export const DescriptionWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+`;
+
+export const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+`;

@@ -5,15 +5,21 @@ import { Nav, NavLink } from "./Navigation.styled";
 interface Props {
   navigation: NavigationProps[];
   sidebar?: boolean;
+  dropdown?: boolean;
 }
 
-const Navigation = ({ navigation, sidebar }: Props) => {
+const Navigation = ({ navigation, sidebar, dropdown }: Props) => {
   return (
-    <Nav sidebar={sidebar}>
+    <Nav sidebar={sidebar} dropdown={dropdown}>
       {navigation.map((nav: NavigationProps) => {
         const { path, name, id } = nav;
         return (
-          <NavLink key={id} to={path || `products/${path}`} sidebar={sidebar}>
+          <NavLink
+            key={id}
+            to={path || `products/${path}`}
+            sidebar={sidebar}
+            dropdown={dropdown}
+          >
             {name}
           </NavLink>
         );

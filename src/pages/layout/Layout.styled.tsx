@@ -10,7 +10,7 @@ export const LayoutWrapper = styled.div`
   grid-template-areas:
     "header header header header"
     "content content content content";
-  background: var(--main);
+  background: var(--white);
 
   @media (max-width: 600px) {
     grid-template-columns: 1fr;

@@ -19,3 +19,7 @@ export const H3 = styled.h3<{ place?: boolean }>`
   margin: ${(props) => (props.place ? "0 auto" : "auto")};
   padding: 10px 0;
 `;
+
+export const H4 = styled.h4<{ place?: boolean }>`
+  grid-area: h4;
+`;

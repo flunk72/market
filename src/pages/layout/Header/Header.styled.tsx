@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { AccountIcon } from "../../../helpers/icons";
 
 export const HeaderWrapper = styled.div`
   display: grid;
@@ -19,7 +20,21 @@ export const IconBlock = styled.div`
   align-items: center;
 
   svg {
-    fill: var(--white);
+    fill: var(--black);
     margin: 10px;
   }
+
+  a {
+    &.active {
+      svg {
+        fill: var(--primary);
+      }
+    }
+  }
+`;
+export const AccountMenu = styled.div`
+  position: relative;
+`;
+export const Account = styled(AccountIcon)<{ trigger?: boolean }>`
+  cursor: pointer;
 `;
