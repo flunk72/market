@@ -19,7 +19,7 @@ const Content = () => {
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/products" element={<Products />}>
-          <Route path="/products/:path" element={<SingleCategory />} />
+          <Route path=":path" element={<SingleCategory />} />
         </Route>
         <Route path="/about" element={<About />} />
         <Route path="/basket" element={<Basket />} />

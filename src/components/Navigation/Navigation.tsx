@@ -13,13 +13,9 @@ const Navigation = ({ navigation, sidebar, dropdown }: Props) => {
     <Nav sidebar={sidebar} dropdown={dropdown}>
       {navigation.map((nav: NavigationProps) => {
         const { path, name, id } = nav;
+        console.log(path);
         return (
-          <NavLink
-            key={id}
-            to={path || `products/${path}`}
-            sidebar={sidebar}
-            dropdown={dropdown}
-          >
+          <NavLink key={id} to={path} sidebar={sidebar} dropdown={dropdown}>
             {name}
           </NavLink>
         );
