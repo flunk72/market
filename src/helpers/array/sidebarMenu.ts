@@ -1,5 +1,6 @@
+import { NavigationProps } from "../../interfaces/navigation";
 
-export const sidebarMenu = [{
+export const sidebarMenu: NavigationProps[] = [{
   path: "chairs",
   name: "Сhairs",
   id: 1,
