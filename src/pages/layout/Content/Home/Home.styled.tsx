@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const HomeWrapper = styled.div`
   display: flex;
@@ -16,13 +16,9 @@ export const Trending = styled.div`
 
 export const Sale = styled(Trending)``;
 
-export const ImgWrapper = styled.div`
-  width: 100%;
-  margin: 15px 0;
-`;
-
 export const Bedroom = styled.img`
   width: 100%;
+  margin-top: 10px;
 `;
 
 export const DescriptionWrapper = styled.div`

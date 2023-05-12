@@ -1,6 +1,7 @@
-import React from "react";
-import { NavigationProps } from "../../interfaces/navigation";
-import { Nav, NavLink } from "./Navigation.styled";
+import React from 'react';
+import { NavigationProps } from '../../interfaces/navigation';
+import { Nav, NavLink } from './Navigation.styled';
+import { Outlet } from 'react-router-dom';
 
 interface Props {
   navigation: NavigationProps[];
@@ -13,7 +14,6 @@ const Navigation = ({ navigation, sidebar, dropdown }: Props) => {
     <Nav sidebar={sidebar} dropdown={dropdown}>
       {navigation.map((nav: NavigationProps) => {
         const { path, name, id } = nav;
-        console.log(path);
         return (
           <NavLink key={id} to={path} sidebar={sidebar} dropdown={dropdown}>
             {name}

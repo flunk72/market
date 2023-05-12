@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const CustomButton = styled.button`
   width: 45%;
@@ -6,6 +6,7 @@ export const CustomButton = styled.button`
   color: var(--black);
   background: var(--primary);
   border: none;
+  border-radius: 5px;
 
   &:hover {
     cursor: pointer;
