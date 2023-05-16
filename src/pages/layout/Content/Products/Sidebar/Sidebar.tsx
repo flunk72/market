@@ -6,7 +6,7 @@ import Navigation from '../../../../../components/Navigation/Navigation';
 const Sidebar = () => {
   return (
     <SidebarWrapper>
-      <Navigation navigation={sidebarMenu} sidebar />
+      <Navigation navigation={sidebarMenu} sidebar="true" />
     </SidebarWrapper>
   );
 };

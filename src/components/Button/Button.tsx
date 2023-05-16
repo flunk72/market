@@ -1,9 +1,8 @@
-import React from "react";
-import { CustomButton } from "./Button.styled";
-import { ButtonProps } from "./Button.props";
+import { CustomButton } from './Button.styled';
+import { ButtonProps } from './Button.props';
 
-const Button = ({ children }: ButtonProps) => {
-  return <CustomButton>{children}</CustomButton>;
+const Button = ({ children, htmlType }: ButtonProps) => {
+  return <CustomButton type={htmlType}>{children}</CustomButton>;
 };
 
 export default Button;

@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavigationProps } from '../../interfaces/navigation';
 import { Nav, NavLink } from './Navigation.styled';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 
 interface Props {
   navigation: NavigationProps[];
-  sidebar?: boolean;
+  sidebar?: string;
   dropdown?: boolean;
 }
 

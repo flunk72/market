@@ -1,9 +1,8 @@
-import { useState } from "react";
-import Navigation from "../Navigation/Navigation";
-import { DropDownWrapper, Menu, MenuItem } from "./DropDown.styled";
+import { useState } from 'react';
+import Navigation from '../Navigation/Navigation';
+import { DropDownWrapper } from './DropDown.styled';
 
-import { dropdownAccount } from "../../helpers/array/dropdownAccount";
-import { NavLink } from "react-router-dom";
+import { dropdownAccount } from '../../helpers/array/dropdownAccount';
 interface Props {
   trigger: boolean;
 }
