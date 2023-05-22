@@ -12,7 +12,7 @@ import Favorit from './Favorit/Favorit';
 import SignIn from './SignIn/SignIn';
 import Registration from './Registration/Registration';
 import Product from '../../../components/Product/Product';
-import RestorePassword from './Products/RestorePassword/RestorePassword';
+import RestorePassword from './RestorePassword/RestorePassword';
 
 const Content = () => {
   const location = useLocation();

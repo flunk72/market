@@ -8,11 +8,18 @@ interface Props {
 }
 
 const DropDown = ({ trigger }: Props) => {
+  const user = true;
+
+  const loginAccount = dropdownAccount.filter((item) => {
+    if (!user) return item.id > 2;
+    return item;
+  });
+
   return (
     <>
       {trigger ? (
         <DropDownWrapper>
-          <Navigation navigation={dropdownAccount} dropdown />
+          <Navigation navigation={loginAccount} dropdown />
         </DropDownWrapper>
       ) : null}
     </>

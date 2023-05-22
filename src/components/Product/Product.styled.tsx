@@ -40,25 +40,31 @@ export const ProductImage = styled.img`
 export const ProductDescription = styled.div`
   display: flex;
   flex-wrap: wrap;
+  align-content: baseline;
 `;
 
 export const Description = styled.div`
   display: flex;
   flex-wrap: wrap;
+
+  h4 {
+    margin-bottom: 10px;
+  }
 `;
 
 export const Characteristics = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin: 8px 0;
+  margin: 10px 0;
 `;
 
 export const CharacteristicDesc = styled.dl`
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin: 8px 0;
+  align-items: flex-end;
+  margin: 10px 0;
 `;
 
 export const Name = styled.dt`
@@ -70,11 +76,11 @@ export const Name = styled.dt`
     background: var(--white);
     color: #707f8d;
     padding-right: 5px;
+    font-size: 14px;
   }
-
   &::before {
     border-bottom: 2px dotted rgba(204, 214, 228, 0.6);
-    bottom: 0.7em;
+    bottom: 0.2em;
     content: '';
     display: block;
     left: 0;
@@ -84,6 +90,6 @@ export const Name = styled.dt`
 `;
 
 export const NameDesc = styled.dd`
-  font-size: 14px;
+  font-size: 15px;
   padding-left: 5px;
 `;
