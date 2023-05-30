@@ -6,7 +6,4 @@ export const ProductContentWrapper = styled.div`
   grid-area: product;
   justify-items: center;
   gap: 15px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  padding: 15px;
-  border-radius: 10px;
 `;

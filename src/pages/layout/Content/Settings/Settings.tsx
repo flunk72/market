@@ -2,24 +2,30 @@ import {
   SettingsWrapper,
   Avatar,
   AccountData,
-  PasswordData,
+  CardAccount,
+  CardPassword,
   ProfileName,
   ProfilePhone,
   ProfileEmail,
 } from './Settings.styled';
 import { EditIcon } from '../../../../helpers/icons';
+import Sidebar from '../../../../components/Sidebar/Sidebar';
 
 const Settings = () => {
   return (
     <SettingsWrapper>
-      <Avatar />
+      <Sidebar>
+        <Avatar />
+      </Sidebar>
       <AccountData>
-        <EditIcon />
-        <ProfileName>Sergey Eromchenko</ProfileName>
-        <ProfilePhone>8-999-999-99-99</ProfilePhone>
-        <ProfileEmail>buratino@gmail.com</ProfileEmail>
+        <CardAccount>
+          <EditIcon />
+          <ProfileName>Sergey Eromchenko</ProfileName>
+          <ProfilePhone>8-999-999-99-99</ProfilePhone>
+          <ProfileEmail>buratino@gmail.com</ProfileEmail>
+        </CardAccount>
+        <CardPassword>Ваш пароль</CardPassword>
       </AccountData>
-      <PasswordData>Ваш пароль</PasswordData>
     </SettingsWrapper>
   );
 };

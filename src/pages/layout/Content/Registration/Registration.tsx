@@ -1,4 +1,3 @@
-import React from 'react';
 import BaseForm from '../../../../components/BaseForm/BaseForm';
 import Button from '../../../../components/Button/Button';
 import Input from '../../../../components/Input/Input';
