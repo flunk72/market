@@ -1,5 +1,6 @@
+import { NavigationProps } from "../../interfaces/navigation";
 
-export const navigation = [{
+export const navigation: NavigationProps[] = [{
   path: "/home",
   name: "Home",
   id: 1

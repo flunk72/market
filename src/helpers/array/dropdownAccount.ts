@@ -1,4 +1,6 @@
-export const dropdownAccount = [{
+import { NavigationProps } from "../../interfaces/navigation";
+
+export const dropdownAccount: NavigationProps[] = [{
   path: "sign-in",
   name: "Sign In",
   id: 1,

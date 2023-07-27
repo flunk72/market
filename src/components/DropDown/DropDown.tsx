@@ -1,9 +1,7 @@
-import { useState } from "react";
 import Navigation from "../Navigation/Navigation";
-import { DropDownWrapper, Menu, MenuItem } from "./DropDown.styled";
-
+import { DropDownWrapper } from "./DropDown.styled";
 import { dropdownAccount } from "../../helpers/array/dropdownAccount";
-import { NavLink } from "react-router-dom";
+
 interface Props {
   trigger: boolean;
 }
@@ -11,11 +9,11 @@ interface Props {
 const DropDown = ({ trigger }: Props) => {
   return (
     <>
-      {trigger ? (
+      {trigger && (
         <DropDownWrapper>
           <Navigation navigation={dropdownAccount} dropdown />
         </DropDownWrapper>
-      ) : null}
+      )}
     </>
   );
 };

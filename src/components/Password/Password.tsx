@@ -1,5 +1,5 @@
-import Input from "../Input/Input";
-import { PasswordWrapper } from "./Password.styled";
+import Input from '../Input/Input';
+import { PasswordWrapper } from './Password.styled';
 
 const Password = () => {
   return (
