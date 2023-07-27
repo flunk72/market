@@ -1,48 +1,38 @@
+import React, { useState } from 'react';
 import BaseForm from '../../../../components/BaseForm/BaseForm';
-import Button from '../../../../components/Button/Button';
 import Input from '../../../../components/Input/Input';
+import Button from '../../../../components/Button/Button';
 import HTag from '../../../../components/HTag/HTag';
-import { useState } from 'react';
 import { StateForm } from '../../../../types/formTypes';
 
-const Registration = () => {
+const RestorePassword = () => {
   const [stateForm, setStateForm] = useState<Partial<StateForm>>({
-    name: '',
-    email: '',
-    password: '',
+    oldPassword: '',
+    newPassword: '',
     confirmPassword: '',
   });
 
   return (
     <BaseForm onSubmit={() => console.log()}>
-      <HTag tag="h3">Sign Up</HTag>
+      <HTag tag="h3">Restore password</HTag>
       {/* <Input
-        type="text"
-        placeholder="Enter your name"
-
-        //  onChange={() => handleChange}
-      />
-      <Input
-        type="text"
-        placeholder="Enter your email"
-
+        type="password"
+        placeholder="Enter old password"
         // onChange={() => handleChange}
       />
       <Input
         type="password"
-        placeholder="Enter your password"
-
+        placeholder="Enter new password"
         // onChange={() => handleChange}
       />
       <Input
         type="password"
-        placeholder="Confirm password"
-
+        placeholder="Confirm new password"
         // onChange={() => handleChange}
       /> */}
-      <Button htmlType="submit">Sign Up</Button>
+      <Button htmlType="submit">Restore password</Button>
     </BaseForm>
   );
 };
 
-export default Registration;
+export default RestorePassword;

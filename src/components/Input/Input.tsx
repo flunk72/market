@@ -1,9 +1,8 @@
-import React from "react";
-import { InputProps } from "./Input.props";
-import { InputType } from "./Input.styled";
+import { InputProps } from './Input.props';
+import { InputType } from './Input.styled';
 
-const Input = ({ type, placeholder }: InputProps) => {
-  return <InputType type={type} placeholder={placeholder} />;
+const Input = ({ type, placeholder, ref }: InputProps) => {
+  return <InputType type={type} placeholder={placeholder} ref={ref} />;
 };
 
 export default Input;

@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export const Styles = createGlobalStyle`
 :root {
@@ -28,6 +28,7 @@ body {
 	color: var(--black);
 	background: #F5F6F8;
 	font-family: 'Noto Sans', sans-serif;
+  
 }
 
 a {

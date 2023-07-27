@@ -1,24 +1,29 @@
-import { NavigationProps } from "../../interfaces/navigation";
+import { NavigationProps } from '../../types/navigation';
 
-export const dropdownAccount: NavigationProps[] = [{
-  path: "sign-in",
-  name: "Sign In",
-  id: 1,
-},{
-  path: "registration",
-  name: "Registration",
-  id: 2,
-},{
-  path: "orders",
-  name: "Orders",
-  id: 3,
-
-},{
-  path: "settings",
-  name: "Settings",
-  id: 4
-},{
-  path: "exit",
-  name: "Exit",
-  id: 5
-}]
+export const dropdownAccount: NavigationProps[] = [
+  {
+    path: 'sign-in',
+    name: 'Sign In',
+    id: 1,
+  },
+  {
+    path: 'registration',
+    name: 'Registration',
+    id: 2,
+  },
+  {
+    path: 'orders',
+    name: 'Orders',
+    id: 3,
+  },
+  {
+    path: 'settings',
+    name: 'Settings',
+    id: 4,
+  },
+  {
+    path: 'exit',
+    name: 'Exit',
+    id: 5,
+  },
+];

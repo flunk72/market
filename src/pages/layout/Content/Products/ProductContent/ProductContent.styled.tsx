@@ -1,7 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ProductContentWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-area: product;
-  border: 1px solid var(--primary);
-  padding: 15px;
+  justify-items: center;
+  gap: 15px;
 `;

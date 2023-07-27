@@ -1,10 +1,13 @@
-import styled from "styled-components";
+import { Link, NavLink } from 'react-router-dom';
+import styled from 'styled-components';
 
-export const SignInWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+export const ForgotButton = styled(Link)`
+  display: block;
+  margin-bottom: 15px;
+  font-size: 14px;
+
+  &:hover {
+    cursor: pointer;
+    color: var(--primary);
+  }
 `;
-
-export const Form = styled.form``;
